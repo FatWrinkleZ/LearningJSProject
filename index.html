@@ -4,10 +4,27 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Javascript Learning Project</title>
+    <link rel="stylesheet" href="main.css">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 <body>
+    <div id="canvas-container">
     <canvas id="snakeCanvas" width="400" height="300" ></canvas>
+    <h1 id="Score">Score : 0</h1>
+    <div id="button-container">
+        <button class="btn" id="UpBtn" onclick="ButtonPress(0,-10)">&and;</button>
+    </div>
+    <div id="button-container">
+        <button class="btn" id="LeftBtn" onclick="ButtonPress(-10,0)">&lt;</button>
+        <button class="btn" id="RightBtn" onclick="ButtonPress(10,0)">&gt;</button>
+    </div>
+    <div id="button-container">
+        <button class="btn" id="DownBtn" onclick="ButtonPress(0,10)">&or;</button>
+    </div>
+    <div id="button-container" class="restartBtn">
+        <button onclick="Restart()">Restart</button>
+    </div>
+    </div>
     <script src='app.js'></script>
 </body>
 </html>
